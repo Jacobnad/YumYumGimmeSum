@@ -1,0 +1,156 @@
+.cartPage {
+    position: relative; 
+    width: 390px;
+    margin: 0 auto;
+    background: #eeeeee;
+    min-height: 811px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    color: black;
+  }
+  
+  
+  .cartIconCart {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 31.99px;
+    height: 30.72px;
+    cursor: pointer;
+    margin-top: 29px;
+    margin-right: 4px;
+  }
+  
+  
+  .emptyCart {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 60px; 
+  }
+  
+  
+  .cartItems {
+    list-style: none;
+    padding: 0;
+    margin: 111px 20px 0 20px;
+    
+    border-top: 1px solid #aaa; 
+    border-bottom: 2px solid #aaa; 
+    padding-bottom: 10px;
+  }
+  
+  /* Varje rad i varukorgen */
+  .cartItem {
+    margin-bottom: 16px;
+  }
+  
+  .cartHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    margin-top: 13px;
+  }
+  
+  /* Namn */
+  .cartName {
+    flex-shrink: 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  
+  
+  .cartLine {
+    flex-grow: 1;
+    border-bottom: 1px dotted #000;
+    margin-bottom: -17px;
+  }
+  
+  .cartPrice {
+    font-weight: 700;
+    white-space: nowrap;
+    font-size: 24px;
+  }
+  
+  
+  .cartControls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  
+  .controlBtn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .quantity {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .trashBtn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  
+  .cartTotalBox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: auto; 
+    font-size: 27px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 2px;
+  }
+  
+  .cartTotalLabel {
+    text-transform: uppercase;
+  }
+  
+  .cartTotalValue {
+    font-size: 27px;
+  }
+  
+  
+  .checkoutBtn {
+    display: block;
+    width: 96%;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 28px;
+    border-radius: 2px;
+    margin-left: 8px;
+  }
+  
+  .checkoutBtn:hover {
+    background-color: #444;
+  }
+  
+  
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }

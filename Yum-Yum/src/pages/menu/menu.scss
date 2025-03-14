@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.menuPage {
+  width: 390px;
+  height: 844px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/bg.png");
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #8ED8BF;
+  mix-blend-mode: multiply;
+}
+
+.logo2 {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  margin-top: 7px;
+}
+
+.cartContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .cartBox {
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    background-color: #F4F3F1F0;
+    margin-top: 14px;
+  }
+
+  .cartIcon {
+    position: absolute;
+    width: 31.99px;
+    height: 30.72px;
+    top: 29px;
+  }
+
+  .cartBadge {
+    position: absolute;
+    top: 5px;
+    right: -7px;
+    background-color: rgb(223, 87, 87);
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.menuBox {
+  width: 358px;
+  max-height: 689.75px;  
+  background-color: #5c5252;
+  padding: 6px;
+  border-radius: 4px;
+  color: white;
+  margin-top: 80px;
+  overflow-y: auto;      
+  overflow-x: hidden;    
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 36px;
+    padding-left: 6px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menuItem {
+    margin-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    .menuHeader {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .menuName {
+      font-size: 18px;
+      padding-left: 6px;
+      font-weight: 700;
+    }
+
+    .menuPrice {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: #827b7b;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.menuBox::-webkit-scrollbar {
+  width: 4px; 
+}
+
+.menuBox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.menuBox::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+.menuIngredients {
+  line-height: 1.2;
+  padding-left: 8px;
+}
+
+.menuDipsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+
+  .menuLine {
+    margin: 0 8px;
+  }
+}
+
+.dipsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 21px;
+  justify-items: center;
+
+  .dipItem {
+    background-color: #827b7b;
+    border: 1px solid #ccc;
+    padding: 0px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    width: 82px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #332d2d;
+      border: 1px solid #5c5252;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+  }
+}
+
+.menuButtons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+
+  button {
+    background: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.active {
+      background: #444;
+    }
+  }
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  gap: 10px;
+  width: 100%;
+
+  .menuName {
+    flex-shrink: 0;
+  }
+
+  .menuLine {
+    flex-grow: 1;
+    border-bottom: 1px dotted white;
+    height: 1px;
+    align-self: center;
+    margin-bottom: -13px;
+  }
+
+  .menuPrice {
+    min-width: 50px;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+}
